@@ -6,7 +6,7 @@ import urlencoded from "body-parser";
 const app = express();
 app.use(express.urlencoded({extended:false}))
 const port = 8001;
-const connection_url = `mongodb+srv://jayanth:1234@cluster0.aiu1gh1.mongodb.net/tinder-db?retryWrites=true&w=majority`;
+const connection_url = `<your-mongo-db-url>`;
 app.use(express.json());
 app.use(Cors());
 mongoose.connect(connection_url);
